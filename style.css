@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.none{
+  display: none;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 65px;
+  background-color: black;
+  border-bottom: 2px solid grey;
+}
+.nav h2 {
+  margin-left: 20px;
+}
+.body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  height: 100%;
+  width: 100%;
+}
+.add-notes {
+  display: flex;
+  padding: 20px;
+  margin-top: 20px;
+  flex-direction: column;
+  border: 0.02px solid #767676;
+}
+.textarea {
+  margin-top: 6px;
+  min-width: 300px;
+  min-height: 100px;
+}
+.a-btn {
+  margin-top: 15px;
+  height: 30px;
+  width: 80px;
+  text-decoration: none;
+  border: 0.1px solid #767676;
+  cursor: not-allowed;
+}
+.a-btn:hover {
+  background-color: #767676;
+}
+.yours-notes {
+  display: flex;
+  padding: 10px 20px 20px 10px;
+  margin-top: 20px;
+  flex-direction: column;
+  border: 0.02px solid #767676;
+  min-width: 320px;
+}
+#h3 {
+  margin-bottom: 12px;
+  margin-left: 10px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+  min-width: 130px;
+  height: 100%;
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid #767676;
+}
+.card-btn {
+  height: 29px;
+  width: 61px;
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #767676;
+}
+.card-btn:hover {
+  background-color: #767676;
+}
+#noty {
+  display: flex;
+  max-width: 420px;
+  overflow-x: auto;
+}
+
+/* pre-define */
+.whiteBG {
+  background-color: white;
+}
+.blackBG {
+  background-color: black;
+}
+.white {
+  color: white;
+}
+.black {
+  color: black;
+}
+.display {
+  display: none;
+}
+.lower{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #000;
+    bottom: 0;
+    width: 100%;
+}
+#lower-h3{
+  color: white;
+}
+#lower-a{
+  color: white;
+  text-decoration: none;
+}
+
+/* media query */
+@media screen and (max-width:500px) {
+  #noty{
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .textarea,.yours-notes{
+    min-width: 200px;
+  }
+  .card{
+    margin-top: 10px;
+  }
+}

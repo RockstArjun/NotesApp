@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="NotesApp-By-ArjunChauhan"
+    />
+    <title>NotesApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <h2 class="white">Notes.App</h2>
+    </nav>
+    <div class="container">
+      <div class="body">
+        <div class="add-notes">
+          <h3>Add a Note</h3>
+          <textarea class="textarea" id="myValue" onkeyup="EnableDisable(this)"></textarea>
+          <button class="a-btn" id="a-btn" disabled="disabled" onclick="{addNotes()}">Add Note</button>
+        </div>
+        <div class="none" id="yn">
+          <h3 id="h3">Your Notes</h3>
+          <div id="noty"></div>
+        </div>
+      </div>
+    </div>
+    <div class="lower">
+      <h3 id="lower-h3">© <span id="year"></span>  <a id="lower-a" href="https://arjunchauhan.netlify.app/">ARJUN CHAUHAN</a></h3>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
